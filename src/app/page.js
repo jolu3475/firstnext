@@ -1,11 +1,9 @@
-import Image from "next/image";
-import Dash from './dashboard/dashboard'
-
-export default function Home() {
+const Home = () => {
   return (
     <>
-      <p> First app with next</p>
-      <Dash/>
+      <h1>Welcome to my channel</h1>
     </>
-  );
+  )
 }
+
+export default Home
