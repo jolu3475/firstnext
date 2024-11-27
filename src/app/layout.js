@@ -20,8 +20,9 @@ export default function Layout({ children }) {
             backgroundColor: 'lightblue',
             padding: '10px',
             margin: '1rem ',
+            height: '50px',
           }}
-          className="rounded-full"
+          className="rounded-full flex justify-between items-center p-4"
         >
           <Header />
         </header>
