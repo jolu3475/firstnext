@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Blog Page',
+}
+
 const Blog = () => {
   return (
     <div>
