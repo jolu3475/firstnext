@@ -1,5 +1,7 @@
+import { Metadata } from 'next'
+
 export const metadata = {
-  title: 'Blog Page',
+  title: 'Blog',
 }
 
 const Blog = () => {

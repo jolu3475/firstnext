@@ -1,3 +1,14 @@
+import { Metadata } from 'next'
+
+export const metadata = {
+  title: {
+    absolute: '',
+    default: 'First Next app',
+    template: '%s | First Next app',
+  },
+  description: 'This is a Next.js app',
+}
+
 export default function Layout({ children }) {
   return (
     <html>
