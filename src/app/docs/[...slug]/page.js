@@ -1,6 +1,13 @@
+// const number = (count) => {
+//   return Math.floor(Math.random * count)
+// }
+
 const Docs = async ({ params }) => {
   const { slug } = await params
-  //   console.log(slug)
+  const num = 1
+  if (num === 1) {
+    throw new Error(`This reviews doesn't exist`)
+  }
   if (slug.length === 2) {
     return (
       <>
