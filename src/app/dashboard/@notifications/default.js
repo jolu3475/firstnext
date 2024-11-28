@@ -1,7 +1,7 @@
 import Card from '@/components/card'
 import Link from 'next/link'
 
-const Notification = () => {
+const DefaultNotification = () => {
   return (
     <>
       <Card>
@@ -12,4 +12,4 @@ const Notification = () => {
   )
 }
 
-export default Notification
+export default DefaultNotification
