@@ -12,8 +12,10 @@ export default function Layout({
   notifications,
   revenueMetrics,
   UserAnalytics,
+  login,
 }) {
-  return (
+  const isLog = false
+  return isLog ? (
     <>
       <div>
         <div>{children}</div>
@@ -26,5 +28,7 @@ export default function Layout({
         </div>
       </div>
     </>
+  ) : (
+    login
   )
 }
