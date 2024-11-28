@@ -1,9 +1,11 @@
 'use client'
 
-const ErrorBondary = ({ error }) => {
+const ErrorBondary = ({ error, reset }) => {
   return (
     <>
-      <div>{error.message}</div>
+      <div>
+        {error.message} <button onClick={reset}>reset</button>
+      </div>
     </>
   )
 }

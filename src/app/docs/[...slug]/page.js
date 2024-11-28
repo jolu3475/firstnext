@@ -4,7 +4,8 @@
 
 const Docs = async ({ params }) => {
   const { slug } = await params
-  const num = 1
+  const num = Math.floor(Math.random() * 3)
+  console.log('test', num)
   if (num === 1) {
     throw new Error(`This reviews doesn't exist`)
   }
