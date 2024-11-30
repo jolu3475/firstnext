@@ -1,11 +1,15 @@
-export const metadata = {
-  title: {
-    absolute: '',
-    default: 'First Next app',
-    template: '%s | First Next app',
-  },
-  description: 'This is a Next.js app',
-}
+'use client'
+
+import { useState } from 'react'
+
+// export const metadata = {
+//   title: {
+//     absolute: '',
+//     default: 'First Next app',
+//     template: '%s | First Next app',
+//   },
+//   description: 'This is a Next.js app',
+// }
 
 export default function Layout({
   children,
@@ -14,8 +18,8 @@ export default function Layout({
   UserAnalytics,
   login,
 }) {
-  const isLog = false
-  return isLog ? (
+  const [isLog, setIsLog] = useState('true')
+  const test = isLog ? (
     <>
       <div>
         <div>{children}</div>
@@ -30,5 +34,14 @@ export default function Layout({
     </>
   ) : (
     login
+  )
+
+  return (
+    <>
+      <button onClick={(e) => setIsLog(!isLog)}>
+        {isLog ? 'logout' : 'login'}
+      </button>
+      {test}
+    </>
   )
 }
