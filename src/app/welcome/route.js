@@ -1,3 +1,5 @@
+import { comment } from './data'
+
 export const GET = () => {
-  return new Response('Welcome to my channel')
+  return new Response.json(comment)
 }
