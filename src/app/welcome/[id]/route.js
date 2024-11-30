@@ -12,3 +12,10 @@ export const PATCH = async (request, { params }) => {
   comment[index].text = text
   return Response.json(comment[index])
 }
+
+export const DELETE = async (_request, { params }) => {
+  const index = comment.findIndex((com) => com.id === parseInt(params.id))
+  const deleteComment = comment[index]
+  comment.splice(index, 1)
+  return Response.json(deleteComment)
+}
