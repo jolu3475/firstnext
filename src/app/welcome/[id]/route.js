@@ -1,6 +1,10 @@
-import { comment } from './data'
+import { redirect } from 'next/navigation'
+import { comment } from '../data'
 
 export const GET = async (_request, { params }) => {
+  if (parseInt(params.id) > comment.length) {
+    redirect('/welcome')
+  }
   const com = comment.find((comme) => comme.id === parseInt(params.id))
   return Response.json(com)
 }

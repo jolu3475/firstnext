@@ -1,7 +1,7 @@
 import { comment } from './data'
 
 export const GET = async () => {
-  return new Response.json(comment)
+  return Response.json(comment)
 }
 
 export const POST = async (request) => {
